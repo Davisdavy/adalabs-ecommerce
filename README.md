@@ -1,16 +1,55 @@
 # flutter_app
 
-A simple mobile and web based e-commerce app
+### About
+ This project is a fictiona ecomerce app intended to target phone accessories as the main product
 
-## Getting Started
+### What can you find?
+ - A working phone auth.
+ -Working product page.
+ -Working cart.
 
-This project is a starting point for a Flutter application.
+## ScreenShots
+<img src="./app/src/main/res/drawable/log1.png" width="200" height="400">                             <img src="./app/src/main/res/drawable/log2.png" width="200" height="400">
+<img src="./app/src/main/res/drawable/log3.png" width="200" height="400">                             <img src="./app/src/main/res/drawable/log4.png" width="200" height="400">
+<img src="./app/src/main/res/drawable/log5.png" width="200" height="400">
 
-A few resources to get you started if this is your first Flutter project:
+## Disclaimer!!
+This project is still under construction
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Project setup and Installation
+* installations such as JUnit, intellij, SDK, JDK, Android Studio.
+*Install all flutter requirements such as dart.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repo `git clone https://github.com/Davisdavy/uzaspeedy`
+2. Build and run th project
+
+* Run App to compile the program
+
+## Technologies used
+* Dart
+
+* Android.
+
+* Firebase.
+
+MIT License
+
+Copyright (c) [2020] [Davis Wafula]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONIN-FRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
