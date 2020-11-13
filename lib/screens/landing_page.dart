@@ -1,5 +1,10 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter_app/constants.dart';
+
+import 'home_page.dart';
+import 'login_page.dart';
 
 
 class LandingPage extends StatelessWidget {
@@ -18,21 +23,59 @@ class LandingPage extends StatelessWidget {
             ),
           );
         }
-        // Once complete, show your application
+        // Connection Initialized - Firebase App is running
         if (snapshot.connectionState == ConnectionState.done) {
-          return Scaffold(
-            body: Container(
-              child: Center(
-                child: Text(
-                    " Firebase initialised"
+
+          // StreamBuilder can check the login state live
+          return StreamBuilder(
+            stream: FirebaseAuth.instance.authStateChanges(),
+            builder: (context, streamSnapshot) {
+              // If Stream Snapshot has error
+              if (streamSnapshot.hasError) {
+                return Scaffold(
+                  body: Center(
+                    child: Text("Error: ${streamSnapshot.error}"),
+                  ),
+                );
+              }
+
+              // Connection state active - Do the user login check inside the
+              // if statement
+              if(streamSnapshot.connectionState == ConnectionState.active) {
+
+                // Get the user
+                User _user = streamSnapshot.data;
+
+                // If the user is null, we're not logged in
+                if(_user == null) {
+                  // user not logged in, head to login
+                  return LoginPage();
+                } else {
+                  // The user is logged in, head to homepage
+                  return HomePage();
+                }
+              }
+
+              // Checking the auth state - Loading
+              return Scaffold(
+                body: Center(
+                  child: Text(
+                    "Checking Authentication...",
+                    style: Constants.regularHeading,
+                  ),
                 ),
-              ),
-            ),
+              );
+            },
           );
         }
+
+        // Connecting to Firebase - Loading
         return Scaffold(
           body: Center(
-            child: Text("Initialising app"),
+            child: Text(
+              "Initialization App...",
+              style: Constants.regularHeading,
+            ),
           ),
         );
       },
