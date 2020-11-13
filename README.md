@@ -9,7 +9,7 @@
  -Working cart.
 
 ## ScreenShots
-<img src="./app/src/main/res/drawable/log1.png" width="200" height="400">                             <img src="./app/src/main/res/drawable/log2.png" width="200" height="400">
+<img src="./android/app/src/main/res/drawable/log1.png" width="200" height="400">                             <img src="./app/src/main/res/drawable/log2.png" width="200" height="400">
 <img src="./app/src/main/res/drawable/log3.png" width="200" height="400">                             <img src="./app/src/main/res/drawable/log4.png" width="200" height="400">
 <img src="./app/src/main/res/drawable/log5.png" width="200" height="400">
 
